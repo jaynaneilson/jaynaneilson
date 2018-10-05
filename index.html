@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jayna Neilson</title>
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto|Roboto:100" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
   </head>
   <body>
     <section class="section-about container">
       <div class="hero">
         <div class="photo">
-          <!-- <style>
+          <style>
           * {
             margin: 0;
             padding: 0;
@@ -18,6 +23,7 @@
           canvas {
             display: block;
             margin: 10px auto;
+            margin-left: -3rem
           }
           
           text {
@@ -26,21 +32,45 @@
             left: 10px;
             font-family: monospace;
           }
-          </style> -->
+          </style>
         </div>
         <div class="tagline">
           <h1 class="name">Jayna Neilson</h1>
-          <div class="title">Programming student</div>
+          <div class="title">Full Stack  <>  Developer</div>
         </div>
       </div>
       <div class="description">
         <p></p>
       </div>
     </section>
+
     <section class="section-projects">
+      
       <div class="project-grid container">
 
           <div class="project-item">
+              <div class="project-thumbnail"><img src="images/RunalityDevices.png"></div>
+              <div class="project-text">
+                <h2 class="project-name">Runality</h2>
+                <div class="project-description">
+                  <p>A virtual hub that connects Coaches, Runners and Teamates. Making your running goals a reality. React.js, mysql database and Google Oauth20.</p>
+                </div>
+                <div class="project-link"><a href="https://github.com/RunnersMind/TrainingForSuccess" target="_blank">View Project</a></div>
+              </div>
+            </div>
+
+            <div class="project-item">
+              <div class="project-thumbnail"><img src="https://thumbs.gfycat.com/SpiffyHeartyDog-size_restricted.gif"></div>
+              <div class="project-text">
+                <h2 class="project-name">Studio Giphy</h2>
+                <div class="project-description">
+                  <p>All of you favorite Studio Ghibli gifs in one place with content ratings. Click a gif and it will come to life! Powered by Giphy API.</p>
+                </div>
+                <div class="project-link"><a href="https://jaynaneilson.github.io/GiphyApi/" target="_blank">View Project</a></div>
+              </div>
+            </div>
+
+          <!-- <div class="project-item">
               <div class="project-thumbnail"><img src="images/marioclicky.png"></div>
               <div class="project-text">
                 <h2 class="project-name">Super Mario Clicky</h2>
@@ -49,64 +79,86 @@
                 </div>
                 <div class="project-link"><a href="https://github.com/jaynaneilson/super-mario-clicky" target="_blank">View Project</a></div>
               </div>
-            </div>
+            </div> -->
 
             <div class="project-item">
-                <div class="project-thumbnail"><img src="http://www.underconsideration.com/fpo/project_images/yuping_00.jpg"></div>
+                <div class="project-thumbnail"><img src="images/look-a-fight.png"></div>
                 <div class="project-text">
-                  <h2 class="project-name">Celebrity Look A Fight</h2>
+                  <h2 class="project-name">Look A Fight</h2>
                   <div class="project-description">
-                    <p>An app where you will discover your celebrity look-a-like and then enter a battleroom to battle against other celebrities.</p>
+                    <p>Discover your celebrity look-a-like and then enter a battleroom to battle against other celebrities. Node.js, mysql Pro, cloudinary and passport.js.</p>
                   </div>
-                  <div class="project-link"><a href="https://github.com/jaynaneilson/mongoNewsScraper" target="_blank">View Project</a></div>
+                  <div class="project-link"><a href="https://github.com/UCBProject2-Jayna-Pat-Thomas-Vas/look-a-fight" target="_blank">View Project</a></div>
                 </div>
               </div>
+
+              <div class="project-item">
+                <div class="project-thumbnail"><img src="https://thumbs.gfycat.com/GracefulFrightenedHadrosaurus-size_restricted.gif"></div>
+                <div class="project-text">
+                  <h2 class="project-name">Beatles Mania</h2>
+                  <div class="project-description">
+                    <p>How well do you know the fab four? This trivia game built with Jquery will put you to the test!</p>
+                  </div>
+                  <div class="project-link"><a href="https://jaynaneilson.github.io/TriviaGame/" target="_blank">View Project</a></div>
+                </div>
+              </div>
+
+              <div class="project-item">
+                  <div class="project-thumbnail"><img src="images/burgers.png"></div>
+                  <div class="project-text">
+                    <h2 class="project-name">Burger Builder</h2>
+                    <div class="project-description">
+                      <p>Log the burgers you build with MySQL, Node, Express, Handlebars and a homemade ORM (yum!).</p>
+                    </div>
+                    <div class="project-link"><a href="https://github.com/jaynaneilson/burger" target="_blank">View Project</a></div>
+                  </div>
+                </div>            
 
           <div class="project-item">
               <div class="project-thumbnail"><img src="images/vergescraper.png"></div>
               <div class="project-text">
                 <h2 class="project-name">Verge News Scraper</h2>
                 <div class="project-description">
-                  <p>Bringing you the lastest and greatest articles in tech news from "The Verge" by a scraper built with MongoDB and Mongoose. You can comment on our articles and delete them if need be.</p>
+                  <p>Verge News scraper built with MongoDB and Mongoose. Comment on articles and delete them if need be.</p>
                 </div>
                 <div class="project-link"><a href="https://github.com/jaynaneilson/mongoNewsScraper" target="_blank">View Project</a></div>
               </div>
             </div>
 
         <div class="project-item">
-          <div class="project-thumbnail"><img src="https://thumbs.gfycat.com/EmbarrassedBronzeBarasingha-size_restricted.gif"></div>
-          <div class="project-text">
-            <h2 class="project-name">Friend Finder</h2>
-            <div class="project-description">
-              <p>Friend Finder is an application built with node.js and express designed to match you up with a friend based on data from a short 10 question survey.</p>
-            </div>
-            <div class="project-link"><a href="https://github.com/jaynaneilson/FriendFinder" target="_blank">View Project</a></div>
-          </div>
-        </div>
-
-        <div class="project-item">
           <div class="project-thumbnail"><img src="https://thumbs.gfycat.com/PhonyQuarrelsomeEwe-size_restricted.gif"></div>
           <div class="project-text">
             <h2 class="project-name">Bamazon</h2>
             <div class="project-description">
-              <p>Bamazon is a CLI application built with node.js and mysql database. A customer can view inventory, select purchase by item id and quantity.</p>
+              <p>CLI application built with node.js and mysql database. A customer can view inventory, select purchase by item id and quantity.</p>
             </div>
             <div class="project-link"><a href="https://github.com/jaynaneilson/bamazon" target="_blank">View Project</a></div>
           </div>
         </div>
 
         <div class="project-item">
-          <div class="project-thumbnail"><img src="http://www.underconsideration.com/fpo/project_images/yuping_00.jpg"></div>
+            <div class="project-thumbnail"><img src="https://thumbs.gfycat.com/EmbarrassedBronzeBarasingha-size_restricted.gif"></div>
+            <div class="project-text">
+              <h2 class="project-name">Friend Finder</h2>
+              <div class="project-description">
+                <p>Built with node.js and express designed to match you up with a friend based on data from a short 10 question survey.</p>
+              </div>
+              <div class="project-link"><a href="https://github.com/jaynaneilson/FriendFinder" target="_blank">View Project</a></div>
+            </div>
+          </div>
+
+        <div class="project-item">
+          <div class="project-thumbnail"><img src="images/musync.png"></div>
           <div class="project-text">
             <h2 class="project-name">MuSync</h2>
             <div class="project-description">
-              <p>MuSync is a music app that allows you to search for your favorite youtube videos, create & manage playlists and search for lyrics all in one place.</p>
+              <p>Search for your favorite youtube videos, create & manage playlists and search for lyrics all in one place using YouTube and Musixmatch API.</p>
             </div>
             <div class="project-link"><a href="https://mysync.github.io/MuSync/" target="_blank">View Project</a></div>
           </div>
         </div>
 
-        <div class="project-item">
+        <!-- <div class="project-item">
           <div class="project-thumbnail"><img src="http://www.underconsideration.com/fpo/project_images/yuping_00.jpg"></div>
           <div class="project-text">
             <h2 class="project-name">Simpsons Hangman</h2>
@@ -115,20 +167,9 @@
             </div>
             <div class="project-link"><a href="https://github.com/jaynaneilson/constructor_hangman" target="_blank">View Project</a></div>
           </div>
-        </div>
+        </div> -->
 
-        <div class="project-item">
-          <div class="project-thumbnail"><img src="http://www.underconsideration.com/fpo/project_images/yuping_00.jpg"></div>
-          <div class="project-text">
-            <h2 class="project-name">Burger Builder</h2>
-            <div class="project-description">
-              <p>Burger Builder is an app where you can log the burgers you build with MySQL, Node, Express, Handlebars and a homemade ORM (yum!).</p>
-            </div>
-            <div class="project-link"><a href="https://github.com/jaynaneilson/burger" target="_blank">View Project</a></div>
-          </div>
-        </div>
-
-        <div class="project-item">
+        <!-- <div class="project-item">
           <div class="project-thumbnail"><img src="http://www.underconsideration.com/fpo/project_images/yuping_00.jpg"></div>
           <div class="project-text">
             <h2 class="project-name">Liri Node App</h2>
@@ -137,25 +178,59 @@
             </div>
             <div class="project-link"><a href="https://github.com/jaynaneilson/liri-node-app" target="_blank">View Project</a></div>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
 
     <section class="section-contact">
       <div class="container">
-        <div class="contact-icons"><a class="contact-icon" href="https://stackexchange.com/users/11972829/jaynaneilson" target="_blank"><img src="images/icon-stack-overflow.svg"></a><a class="contact-icon" href=""><img src="images/icon-email.svg"></a><a class="contact-icon" href="https://github.com/jaynaneilson" target="_blank"><img src="images/icon-github.svg"></a></div>
+        <div class="contact-icons"><a class="contact-icon" href="https://stackexchange.com/users/11972829/jaynaneilson" target="_blank"><img src="images/icon-stack-overflow.svg"></a><a class="contact-icon" href="mailto:jaynaneilson@gmail.com"><img src="images/icon-email.svg"></a><a class="contact-icon" href="https://github.com/jaynaneilson" target="_blank"><img src="images/icon-github.svg"></a><a class="contact-icon" href="https://www.linkedin.com/in/jayna-neilson-127200149/" target="_blank"><img src="images/icon-linkedin.svg"></a></div>
       </div>
+      <div class="copyright">
+          <p>Jayna Neilson &copy; 2018</p>
+        </div>
     </section>
-  </body>
-</html>
 
-<!-- <script>
-    setTimeout(function() {
+    <!-- <script> $(function(){  // $(document).ready shorthand
+        $('.hero').fadeIn('slow');
+      });
+      
+      $(document).ready(function() {
+          
+          /* Every time the window is scrolled ... */
+          $(window).scroll( function(){
+          
+              /* Check the location of each desired element */
+              $('.project-item').each( function(i){
+                  
+                  var bottom_of_object = $(this).position().top + $(this).outerHeight();
+                  var bottom_of_window = $(window).scrollTop() + $(window).height();
+                  
+                  /* If the object is completely visible in the window, fade it it */
+                  if( bottom_of_window > bottom_of_object ){
+                      
+                      $(this).animate({'opacity':'1'},1500);
+                          
+                  }
+                  
+              }); 
+          
+          });
+          
+      });
+        </script> -->
+
+  <script>
+
+  setTimeout(function() {
   
-  var canvas = document.body.appendChild( document.createElement( 'canvas' ) ),
+  var canvas = document.getElementsByClassName('photo')[0].appendChild( document.createElement( 'canvas' ) ),
     context = canvas.getContext( '2d' ),
+
+    //target the element you want
+    //canvas = getelementbyclass('photo').appendChild( document.createElement( 'canvas' ) ),
   
-    width = Math.min( window.innerWidth, window.innerHeight ) * 0.95,
+    width = Math.min( window.innerWidth, window.innerHeight ) * 0.50,
     height = width,
   
     radius = Math.min( width, height ) * 0.5,
@@ -256,7 +331,7 @@
   
   }
   
-  // Pains one layer
+  // Paints one layer
   function paintLayer( layer, mask ) {
     size = layerSize + ( mask ? 10 : 0 );
     size2 = size / 2;
@@ -266,7 +341,7 @@
   
     // No stroke if this is a mask
     if( !mask ) {
-      context.strokeStyle = '#000';
+      context.strokeStyle = '	#C0C0C0';
       context.lineWidth = 1;
       context.strokeRect( -size2, -size2, size, size );
     }
@@ -307,4 +382,30 @@
   initialize();
   
   }, 0);
-  </script> -->
+
+  //Fade-in on scroll jquery
+
+$(".project-item").first().addClass('visible');
+
+$(document).on("scroll", function () {
+  var pageTop = $(document).scrollTop();
+  var pageBottom = pageTop + $(window).height();
+  var projects = $(".project-item");
+
+  console.log(projects.first());
+
+  for (var i = 0; i < projects.length; i++) {
+    var project = projects[i]
+
+    if ($(project).position().top < pageBottom) {
+      $(project).addClass("visible")
+    } else {
+      $(project).removeClass("visible")
+    }
+  }
+})
+
+  </script>
+
+</body>
+</html>
